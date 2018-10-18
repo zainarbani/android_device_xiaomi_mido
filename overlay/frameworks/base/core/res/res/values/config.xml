@@ -472,4 +472,7 @@
 
     <!-- Make things go fast -->
     <bool name="config_ui_enableFadingMarquee">false</bool>
+
+    <!-- Whether device ignores the RSSNR signal implementation -->
+    <bool name="config_ignoreRssnrSignalLevel">true</bool>
 </resources>
