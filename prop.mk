@@ -84,6 +84,7 @@ debug.gralloc.enable_fb_ubwc=1 \
 debug.mdpcomp.logs=0 \
 debug.sf.hw=0 \
 debug.sdm.support_writeback=0 \
+debug.hwui.use_buffer_age=false \
 dev.pm.dyn_samplingrate=1 \
 persist.debug.wfd.enable=1 \
 vendor.display.disable_rotator_downscale=1 \
