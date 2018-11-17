@@ -71,4 +71,8 @@ sed -i \
      "s|/data/misc/camera/cam_socket|/data/vendor/qcam/cam_socket|g" \
      "$DEVICE_BLOB_ROOT"vendor/bin/mm-qcamera-daemon
 
+# HAX for thermal-engine
+THERMAL_ENGINE = "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/bin/thermal-engine
+sed -i "s|/system/etc/|/vendor/etc/|g" "THERMAL_ENGINE"
+
 "$MY_DIR"/setup-makefiles.sh
