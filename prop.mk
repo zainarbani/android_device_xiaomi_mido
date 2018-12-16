@@ -18,7 +18,7 @@ persist.vendor.audio.fluence.speaker=true \
 persist.vendor.audio.fluence.voicecall=true \
 persist.vendor.audio.fluence.voicerec=true \
 persist.vendor.audio.hw.binder.size_kbyte=1024 \
-persist.vendor.bt.enable.splita2dp=false \
+persist.vendor.btstack.enable.splita2dp=false \
 ro.af.client_heap_size_kbyte=7168 \
 ro.vendor.audio.sdk.fluencetype=fluence \
 ro.vendor.audio.sdk.ssr=false \
@@ -158,10 +158,6 @@ persist.rild.nitz_short_ons_0="" \
 persist.rild.nitz_short_ons_1="" \
 persist.rild.nitz_short_ons_2="" \
 persist.rild.nitz_short_ons_3=""
-
-# Property to enable display default color mode
-PRODUCT_PROPERTY_OVERRIDES += \
-vendor.display.enable_default_color_mode=1
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
