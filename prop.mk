@@ -85,7 +85,6 @@ debug.mdpcomp.logs=0 \
 debug.sf.hw=0 \
 debug.sf.disable_hwc_vds=1 \
 debug.sf.disable_hwc=0 \
-debug.sf.latch_unsignaled=1 \
 debug.sf.recomputecrop=0 \
 debug.sf.gpu_comp_tiling=1 \
 debug.performance.tuning=1 \
