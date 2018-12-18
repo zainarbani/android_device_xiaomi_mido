@@ -407,3 +407,6 @@ case "$buildvariant" in
         echo "4 4 1 4" > /proc/sys/kernel/printk
         ;;
 esac
+
+echo '0' > /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness
+echo '0' > /sys/devices/soc/qpnp-flash-led-25/leds/led:flash_1/max_brightness

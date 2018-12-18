@@ -222,6 +222,12 @@ on boot
     # Create hvdcp_opti directory
     mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
 
+    # Flash LED
+    chmod 0660 /sys/devices/soc/qpnp-flash-led-25/leds/led:flash_1/max_brightness
+    chown system system /sys/devices/soc/qpnp-flash-led-25/leds/led:flash_1/max_brightness
+    chmod 0660 /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness
+    chown system system /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness
+
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
