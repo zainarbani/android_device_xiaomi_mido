@@ -433,4 +433,6 @@
 
     <!-- Button illumination -->
     <bool name="config_deviceHasVariableButtonBrightness">true</bool>
+
+    <bool name="config_dual_LTE_capability">true</bool>
 </resources>
