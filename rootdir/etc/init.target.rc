@@ -45,7 +45,7 @@ on fs
 on init
     write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
 
-# Add a cpuset for the camera daemon
+    # Add a cpuset for the camera daemon
     mkdir /dev/cpuset/camera-daemon 0750 cameraserver cameraserver
     write /dev/cpuset/camera-daemon/cpus 0-7
     write /dev/cpuset/camera-daemon/mems 0
@@ -180,11 +180,18 @@ on charger
     start vendor.hvdcp_opti
     start thermal-engine
 
-on boot
-# access permission for wlan
+on boot	
+    # Update cpusets now that boot is complete and we want better load balancing
+	write /dev/cpuset/top-app/cpus 0-7
+	write /dev/cpuset/top-app/boost/cpus 4-7
+	write /dev/cpuset/foreground/cpus 0-6
+	write /dev/cpuset/background/cpus 0-1
+	write /dev/cpuset/system-background/cpus 0-3
+	
+    # access permission for wlan
     chown system system /mnt/vendor/persist/WCNSS_qcom_wlan_nv.bin
 
-#USB controller configuration
+    # USB controller configuration
     write /sys/module/g_android/parameters/mtp_tx_req_len 131072
     write /sys/module/g_android/parameters/mtp_rx_req_len 131072
     write /sys/class/android_usb/android0/f_rndis_qc/rndis_transports BAM2BAM_IPA
