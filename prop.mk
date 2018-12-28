@@ -92,6 +92,7 @@ debug.sdm.support_writeback=0 \
 debug.hwui.use_buffer_age=false \
 dev.pm.dyn_samplingrate=1 \
 persist.debug.wfd.enable=1 \
+persist.sys.wfd.virtual=0 \
 persist.demo.hdmirotationlock=false \
 persist.hwc.enable_vds=1 \
 persist.hwc.mdpcomp.enable=true \
