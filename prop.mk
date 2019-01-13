@@ -41,6 +41,7 @@ vendor.voice.path.for.pcm.voip=true \
 vendor.voice.playback.conc.disabled=true \
 vendor.voice.record.conc.disabled=false \
 vendor.voice.voip.conc.disabled=true \
+persist.audio.dirac.speaker=true \
 ro.config.media_vol_steps=25 \
 ro.config.vc_call_vol_steps=7
 
